@@ -1,0 +1,6 @@
+<View xmlns="sap.m"
+	controllerName="Efatura.App"
+ 	height="100%">
+	<App id="rootControl">
+	</App>
+</View>
