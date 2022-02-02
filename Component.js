@@ -2,9 +2,9 @@
 
 sap.ui.define(["sap/ui/core/UIComponent"], function (UIComponent) {
   "use strict";
-  return UIComponent.extend("Efatura.Component", {
+  return UIComponent.extend("ui5Tutorial.Component", {
     metadata: {
-      rootView: "Efatura.App",
+      rootView: "ui5Tutorial.App",
       routing: {
         config: {
           routerClass: "sap.m.routing.Router",
@@ -15,10 +15,10 @@ sap.ui.define(["sap/ui/core/UIComponent"], function (UIComponent) {
         },
         routes: [
           {
-            name: "IrsaliyeList",
-            viewPath: "Efatura.Application.IrsaliyeList.Views",
+            name: "JsonTable",
+            viewPath: "ui5Tutorial.Application.JsonTable.Views",
             pattern: "",
-            view: "IrsaliyeList",
+            view: "JsonTable",
             viewLevel: 0,
             transition: "show",
           },

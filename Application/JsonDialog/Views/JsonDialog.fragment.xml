@@ -1,0 +1,26 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+    controllerName="ui5Tutorial.Application.JsonTable.Controller.JsonTable">
+	<Dialog
+		title="Details">
+        <content id="detail">
+				<VBox>					
+					<Text text="City : {/detailItem/address/city}"/>	
+					<Text text="Street : {/detailItem/address/street}"/>
+					<Text text="Suite : {/detailItem/address/suite}"/>
+					<Text text="Zip Code : {/detailItem/address/city}"/>
+					<Text text="Geo :"/>
+					<Text text="Lat : {/detailItem/address/geo/lat}"/>
+					<Text text="Lng : {/detailItem/address/geo/lng}"/>
+					<HBox>	
+					</HBox>
+				</VBox>               
+		</content>
+        <beginButton>
+			<Button
+				text="Ok"
+				press="onCloseDialog"/>
+		</beginButton>
+	</Dialog>
+</core:FragmentDefinition>

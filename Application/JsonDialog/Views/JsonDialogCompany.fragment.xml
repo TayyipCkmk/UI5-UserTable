@@ -1,0 +1,21 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core"
+    controllerName="ui5Tutorial.Application.JsonTable.Controller.JsonTable">
+	<Dialog
+		title="Details"
+        id="companyDialog">
+        <content id="detail">
+				<VBox>					
+                    <Text text="Name : {/detailItem/company/name}"/>	
+                    <Text text="Catchphrase : {/detailItem/company/catchPhrase}"/>
+                    <Text text="Service : {/detailItem/company/bs}"/>
+				</VBox>                
+		</content>
+        <beginButton>
+			<Button
+				text="Ok"
+				press="onCloseCompany"/>
+		</beginButton>
+	</Dialog>
+</core:FragmentDefinition>

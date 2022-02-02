@@ -1,0 +1,59 @@
+<mvc:View 
+    xmlns:core="sap.ui.core" 
+    xmlns:mvc="sap.ui.core.mvc" 
+    xmlns="sap.m" 
+    controllerName="ui5Tutorial.Application.JsonTable.controller.JsonTable">
+    <App>
+        <pages>
+            <Page title="Json Table">
+                <content>
+                    <Table id="jTable" items="{/tableList}">
+                        <columns>
+                            <Column>
+                                <Text text="User Id" />
+                            </Column>
+                            <Column>
+                                <Text text="Name" />
+                            </Column>
+                            <Column>
+                                <Text text="Username" />
+                            </Column>
+                            <Column>
+                                <Text text="Address" />
+                            </Column>
+                            <Column>
+                                <Text text="Phone"/>
+                            </Column>
+                            <Column>
+                                <Text text="Website"/>
+                            </Column>
+                            <Column>
+                                <Text text="Company"/>
+                            </Column>
+                            <Column>
+                                <Text text="Todos"/>
+                            </Column>
+                        </columns>
+                        <items>
+                            <ColumnListItem>
+                                <cells>
+                                    <ObjectIdentifier text="{id}" />
+                                    <Text text="{name}" />
+                                    <Text text="{username}" />
+                                    <Button text="Address" 
+                                            press=".onOpenDialog"/>
+                                    <Text text="{phone}" />   
+                                    <Text text="{website}" />  
+                                    <Button text="Company" 
+                                            press=".onOpenCompany"/>
+                                    <Button text="Todos" 
+                                            press=".onOpenTodos"/>            
+                                </cells>
+                            </ColumnListItem>
+                        </items>
+                    </Table>
+                </content>
+            </Page>
+        </pages>
+    </App>
+</mvc:View>

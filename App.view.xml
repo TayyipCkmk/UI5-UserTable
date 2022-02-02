@@ -1,5 +1,5 @@
 <View xmlns="sap.m"
-	controllerName="Efatura.App"
+	controllerName="ui5Tutorial.App"
  	height="100%">
 	<App id="rootControl">
 	</App>

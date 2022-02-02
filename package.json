@@ -1,5 +1,5 @@
 {
-  "name": "efatura",
+  "name": "table",
   "version": "1.0.0",
   "description": "",
   "main": "App.controller.js",
@@ -9,5 +9,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {}
+  "dependencies": {
+    "browser-sync": "^2.26.14"
+  }
 }

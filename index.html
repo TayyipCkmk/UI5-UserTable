@@ -1,23 +1,19 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Efatura</title>
-    <!-- CSS -->
-    <link rel="stylesheet" href="Resources/css/style.css" />
-    <!-- JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Ui5 JSON Table</title>
 
     <script
-      src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"
+      src="https://openui5.hana.ondemand.com/resources/sap-ui-core.js"
       data-sap-ui-theme="sap_belize"
       data-sap-ui-libs="sap.m"
       data-sap-ui-bindingSyntax="complex"
-      data-sap-ui-resourceroots='{"Efatura": "./"}'
+      data-sap-ui-resourceroots='{"ui5Tutorial": "./"}'
     ></script>
     <script>
       sap.ui.getCore().attachInit(function () {
         app: new sap.ui.core.ComponentContainer({
-          name: "Efatura",
+          name: "ui5Tutorial",
           height: "100%",
         }).placeAt("content");
       });
@@ -25,7 +21,6 @@
       oModel.setSizeLimit(5000);
       sap.ui.getCore().setModel(oModel);
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   </head>
   <body class="sapUiBody sapUiSizeCompact" id="content"></body>
 </html>
